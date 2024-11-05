@@ -1,0 +1,171 @@
+/* Reset de estilo y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0e5d8; /* Color de fondo suave (crema claro) */
+    color: #333; /* Color de texto negro */
+}
+
+/* Estilo del nav */
+nav {
+    padding: 0 !important; /* Elimina padding para evitar espacio extra */
+    margin: 0 !important; /* Elimina márgenes */
+    background-color: #fff8dc !important; /* Color de fondo suave (maíz claro) */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Estilo del contenedor dentro de nav */
+.container-fluid {
+    background-color: #fff8dc !important; /* Color de fondo suave (maíz claro) */
+    padding: 1.5rem 10% !important; /* Agrega padding aquí si lo necesitas */
+}
+
+/* Asegúrate de que la imagen también tenga un estilo apropiado */
+.navbar-brand img {
+    max-width: 100% !important; /* Asegura que la imagen no exceda su contenedor */
+    height: auto !important; /* Mantiene la proporción de la imagen */
+}
+
+section {
+    margin-top: 20px; /* Ajusta si quieres más espacio entre sections */
+    margin: 20px auto;
+    display: flex;
+    width: 900px;
+    height: 430px;
+    gap: 15px;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: width 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(110%);
+}
+
+/* Secciones de Contenido */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+aside div {
+    padding: 1.5rem 10%;
+    background-color: #fff8dc; /* Color de fondo suave (maíz claro) */
+    margin-top: 20px; /* Mantiene margen en secciones internas */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header div {
+    padding: 1.5rem 10%;
+    background-color: #fff8dc; /* Color de fondo suave (maíz claro) */
+    margin-top: 20px; /* Mantiene margen en secciones internas */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer div {
+    padding: 1.5rem 10%;
+    background-color: #fff8dc; /* Color de fondo suave (maíz claro) */
+    margin-top: 20px; /* Mantiene margen en secciones internas */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+ul li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+ul li strong {
+    color: #ff4500; /* Color de texto fuerte (naranja) */
+}
+
+h3 {
+    color: #ff6347; /* Color de texto (tomate) */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #555; /* Color de texto gris oscuro */
+}
+
+footer {
+    background-color: #dcdcdc !important; /* Color de fondo suave (gris claro) */
+    color: #333 !important; /* Color de texto negro */
+    padding: 20px !important; /* Espaciado interno */
+    text-align: center !important; /* Centrar el texto */
+}
+
+/* Elimina margen en el footer */
+footer h5, footer p {
+    margin: 0 !important; /* Elimina márgenes del footer */
+}
+
+footer p {
+    margin: 5px 0 !important; /* Espacio vertical entre párrafos */
+}
+
+footer a {
+    color: #4b0082 !important; /* Color de texto (indigo oscuro) */
+    text-decoration: none !important; /* Sin subrayado en los enlaces */
+    margin: 10px;
+}
+
+footer a:hover {
+    text-decoration: none !important; /* Subrayar el enlace al pasar el mouse */
+}
+
+footer div {
+    margin-top: 20px !important; /* Espacio superior para cada sección del footer */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+section {
+    margin-top: 20px; /* Ajusta si quieres más espacio entre sections */
+    margin: 20px auto;
+    display: flex;
+    width: 400px;
+    height: 430px;
+    gap: 15px;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: width 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(110%);
+}
+}
