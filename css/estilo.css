@@ -30,6 +30,30 @@ nav {
     height: auto !important; /* Mantiene la proporción de la imagen */
 }
 
+/* Estilo para enlaces dentro del menú desplegable */
+.dropdown-menu .dropdown-item:focus, 
+.dropdown-menu .dropdown-item:active {
+    color: #4b0082;
+    background-color: transparent !important; /* Asegura que no haya fondo */
+    text-decoration: none !important; /* Elimina el subrayado */
+}
+
+/* Elimina el borde negro después de hacer clic */
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Agrega el borde negro solo al pasar el mouse */
+.navbar-toggler:hover {
+    border: 1px solid black;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #f0e5d8; /* Color personalizado */
+    border: none;
+}
+
 section {
     margin-top: 20px; /* Ajusta si quieres más espacio entre sections */
     margin: 20px auto;
@@ -169,3 +193,7 @@ section img:hover {
     filter: contrast(110%);
 }
 }
+
+.reco a {
+    text-decoration: none;
+  }
