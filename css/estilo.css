@@ -197,3 +197,8 @@ section img:hover {
 .reco a {
     text-decoration: none;
   }
+
+a {
+    text-decoration: none;
+    color: #ff6347
+}
